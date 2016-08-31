@@ -1,0 +1,32 @@
+/* ===============================
+   Page Structure
+   =============================== */
+html {
+  height: 100%;
+}
+body.single-powerbi_reports,
+.single-powerbi_reports #wrapper,
+.single-powerbi_reports #wrapper .powerbi {
+  height: 100%;
+}
+
+body.single.single-powerbi_reports {
+  position: relative;
+  top: -32px;
+}
+
+.single-powerbi_reports #wpadminbar,
+.single-powerbi_reports #header,
+.single-powerbi_reports .menu-fixer {
+  display: none;
+}
+
+.powerbi {
+  position: relative;
+}
+
+.powerbi .powerbi-report iframe {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
