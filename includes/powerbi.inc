@@ -82,7 +82,7 @@ class Powerbi {
         || !isset($this->embedTokens[$reportId])
         || $this->embedTokens[$reportId]['exp'] > time()) {
       $key = reset($this->appTokens);
-      $expiration = time()+60+60;
+      $expiration = time()+60*60;
       $payload = array(
         "ver" => $this->version,
         "type" => "embed",
